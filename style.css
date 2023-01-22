@@ -140,6 +140,17 @@ header {
   text-transform: uppercase;
 }
 
+.premium .bestseller {
+  position: absolute;
+  background-color: #fe5c5c;
+  font-size: 15px;
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 15px;
+  top: 270px;
+  text-transform: uppercase;
+}
+
 h2 {
   margin-top: 30px;
   text-transform: uppercase;
@@ -168,10 +179,6 @@ h2 {
   text-transform: uppercase;
   font-size: 15px;
   margin-bottom: 230px;
-}
-
-.hidden {
-  display: none;
 }
 
 /* enterprise */
