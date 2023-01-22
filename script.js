@@ -1,4 +1,41 @@
-"use strict";
+function enterprise() {
+  const planos = document.querySelector(".premium");
+  const bestSeller = document.createElement("p");
+  bestSeller.classList.add("bestseller");
+  bestSeller.innerText = "BESTSELLER";
+  planos.insertAdjacentElement("afterbegin", bestSeller);
+  const planosStandard = document.querySelector(".standard");
+  const planoStandardChildren = planosStandard.children[0].innerText;
+  if (planoStandardChildren === "BESTSELLER") {
+    planosStandard.children[0].remove();
+  }
 
-const personalBTN = document.querySelector(".personal");
-const enterpriseBTN = document.querySelector(".enterprise");
+  const priceEnterpriseBasic = document.querySelector(".valor-basic");
+  priceEnterpriseBasic.innerHTML = "$29,99";
+}
+function personal() {
+  const planos = document.querySelector(".standard");
+  const bestSeller = document.createElement("p");
+  bestSeller.classList.add("bestseller");
+  bestSeller.innerText = "BESTSELLER";
+  planos.insertAdjacentElement("afterbegin", bestSeller);
+  const planosPremium = document.querySelector(".premium");
+
+  const planosPremiumChildren = planosPremium.children[0].innerText;
+
+  if (planosPremiumChildren === "BESTSELLER") {
+    planosPremium.children[0].remove();
+  }
+  const priceEnterpriseBasic = document.querySelector(".valor-basic");
+  priceEnterpriseBasic.innerHTML = "$19,99";
+}
+
+function removeBestBtn() {}
+
+window.addEventListener("load", () => {
+  const personalBtn = document.getElementById("personal");
+  const enterpriseBtn = document.getElementById("enterprise");
+
+  enterpriseBtn.addEventListener("click", enterprise);
+  personalBtn.addEventListener("click", personal);
+});

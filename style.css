@@ -140,6 +140,17 @@ header {
   text-transform: uppercase;
 }
 
+.premium .bestseller {
+  position: absolute;
+  background-color: #fe5c5c;
+  font-size: 15px;
+  padding: 5px;
+  color: #ffffff;
+  border-radius: 15px;
+  top: 270px;
+  text-transform: uppercase;
+}
+
 h2 {
   margin-top: 30px;
   text-transform: uppercase;
@@ -151,11 +162,15 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-.valor {
+.valor-basic,
+.valor-stand,
+.valor-premium {
   font-size: 50px;
 }
 
-.month {
+.month-basic,
+.month-stand,
+.month-premium {
   color: #fe5c5c;
 }
 
@@ -168,10 +183,6 @@ h2 {
   text-transform: uppercase;
   font-size: 15px;
   margin-bottom: 230px;
-}
-
-.hidden {
-  display: none;
 }
 
 /* enterprise */
